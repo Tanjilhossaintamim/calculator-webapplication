@@ -47,12 +47,13 @@ function division() {
     let int = parseInt(document.getElementById('text').value);
     let int1 = parseInt(document.getElementById('text1').value);
     document.getElementById('h1').style.color = '#ffa600ab';
+    let ans=int/int1
     if (int1 === 0 && int > 0) {
         document.getElementById('h1').style.color = 'red';
         return document.getElementById('h1').innerText = 'Error';
     }
 
-    return document.getElementById('h1').innerText = int / int1;
+    return document.getElementById('h1').innerText = parseFloat(ans.toFixed(2));
 
 
 }
